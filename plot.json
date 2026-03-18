@@ -439,7 +439,8 @@
 "colour": "comparison",
 "xend": "log10.p_max",
 "yend": "estimate_mean",
-"clickSelects": "comparison" 
+"clickSelects": "comparison",
+"showSelected1": "comparison" 
 },
 "params": {
  "lineend": "butt",
@@ -448,9 +449,9 @@
 "size":        4,
 "alpha":      0.7,
 "clickSelects": "comparison",
-"showSelected": [ ],
+"showSelected": "comparison",
 "help_clickSelects": "comparison",
-"help_showSelected": [ ] 
+"help_showSelected": "comparison" 
 },
 "types": {
  "colour": "rgb",
@@ -459,15 +460,18 @@
 "x": "numeric",
 "xend": "numeric",
 "clickSelects": "character",
+"showSelected1": "character",
 "PANEL": "factor",
 "group": "character" 
 },
 "chunk_order": [],
 "nest_order": [
- "PANEL" 
+ "showSelected1",
+"PANEL" 
 ],
 "subset_order": [
- "PANEL" 
+ "showSelected1",
+"PANEL" 
 ],
 "chunks": 1,
 "total": 1 
@@ -481,7 +485,8 @@
 "colour": "comparison",
 "xend": "log10.p_mean",
 "yend": "estimate_max",
-"clickSelects": "comparison" 
+"clickSelects": "comparison",
+"showSelected1": "comparison" 
 },
 "params": {
  "lineend": "butt",
@@ -490,9 +495,9 @@
 "size":        4,
 "alpha":      0.7,
 "clickSelects": "comparison",
-"showSelected": [ ],
+"showSelected": "comparison",
 "help_clickSelects": "comparison",
-"help_showSelected": [ ] 
+"help_showSelected": "comparison" 
 },
 "types": {
  "colour": "rgb",
@@ -501,15 +506,18 @@
 "x": "numeric",
 "xend": "numeric",
 "clickSelects": "character",
+"showSelected1": "character",
 "PANEL": "factor",
 "group": "character" 
 },
 "chunk_order": [],
 "nest_order": [
- "PANEL" 
+ "showSelected1",
+"PANEL" 
 ],
 "subset_order": [
- "PANEL" 
+ "showSelected1",
+"PANEL" 
 ],
 "chunks": 1,
 "total": 1 
@@ -1291,6 +1299,7 @@
 "geoms": [ "point", "path", "path" ],
 "title": "comparison",
 "class": "comparison",
+"selector": "comparison",
 "is_discrete": true,
 "legend_type": "colour",
 "text_size": "9.6pt",
