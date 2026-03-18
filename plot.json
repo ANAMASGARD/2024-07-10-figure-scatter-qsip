@@ -521,6 +521,188 @@
 ],
 "chunks": 1,
 "total": 1 
+},
+"geom16_hline_newFeature": {
+ "geom": "hline",
+"classed": "geom16_hline_newFeature",
+"aes": {
+ "yintercept": "diff" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#7F7F7F",
+"size":        1 
+},
+"types": {
+ "yintercept": "numeric",
+"PANEL": "factor",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "PANEL" 
+],
+"subset_order": [
+ "PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom17_vline_newFeature": {
+ "geom": "vline",
+"classed": "geom17_vline_newFeature",
+"aes": {
+ "xintercept": "log10.p" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#7F7F7F",
+"size":        1 
+},
+"types": {
+ "xintercept": "numeric",
+"PANEL": "factor",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "PANEL" 
+],
+"subset_order": [
+ "PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom18_point_newFeature": {
+ "geom": "point",
+"classed": "geom18_point_newFeature",
+"aes": {
+ "x": "log10.p",
+"y": "estimate",
+"colour": "comparison",
+"showSelected1": "comparison" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"showSelected": "comparison",
+"help_showSelected": "comparison" 
+},
+"types": {
+ "colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character",
+"fill": "rgb" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom19_segment_newFeature": {
+ "geom": "segment",
+"classed": "geom19_segment_newFeature",
+"aes": {
+ "x": "log10.p_min",
+"y": "estimate_mean",
+"colour": "comparison",
+"xend": "log10.p_max",
+"yend": "estimate_mean",
+"clickSelects": "comparison",
+"showSelected1": "comparison" 
+},
+"params": {
+ "lineend": "butt",
+"na.rm": false,
+"na.rm": false,
+"size":        4,
+"alpha":      0.7,
+"clickSelects": "comparison",
+"showSelected": "comparison",
+"help_clickSelects": "comparison",
+"help_showSelected": "comparison" 
+},
+"types": {
+ "colour": "rgb",
+"y": "numeric",
+"yend": "numeric",
+"x": "numeric",
+"xend": "numeric",
+"clickSelects": "character",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom20_segment_newFeature": {
+ "geom": "segment",
+"classed": "geom20_segment_newFeature",
+"aes": {
+ "x": "log10.p_mean",
+"y": "estimate_min",
+"colour": "comparison",
+"xend": "log10.p_mean",
+"yend": "estimate_max",
+"clickSelects": "comparison",
+"showSelected1": "comparison" 
+},
+"params": {
+ "lineend": "butt",
+"na.rm": false,
+"na.rm": false,
+"size":        4,
+"alpha":      0.7,
+"clickSelects": "comparison",
+"showSelected": "comparison",
+"help_clickSelects": "comparison",
+"help_showSelected": "comparison" 
+},
+"types": {
+ "colour": "rgb",
+"y": "numeric",
+"yend": "numeric",
+"x": "numeric",
+"xend": "numeric",
+"clickSelects": "character",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
 } 
 },
 "selectors": {
@@ -541,7 +723,10 @@
 "geom10_segment_noLegend",
 "geom13_point_color",
 "geom14_segment_color",
-"geom15_segment_color" 
+"geom15_segment_color",
+"geom18_point_newFeature",
+"geom19_segment_newFeature",
+"geom20_segment_newFeature" 
 ] 
 } 
 },
@@ -1456,6 +1641,350 @@
 "geom13_point_color",
 "geom14_segment_color",
 "geom15_segment_color" 
+] 
+},
+"newFeature": {
+ "panel_margin_lines":     0.27,
+"legend": {
+ "comparison": {
+ "guide": "legend",
+"geoms": [ "point", "path", "path" ],
+"title": "comparison",
+"class": "comparison",
+"selector": "comparison",
+"is_discrete": true,
+"legend_type": "colour",
+"text_size": "9.6pt",
+"title_size": "12pt",
+"entries": [
+ {
+ "pointcolour": "#F8766D",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "control.vs.carbon.additions",
+"pathcolour": "#F8766D",
+"pathsize":        4,
+"pathlinetype":        1,
+"pathalpha":      0.7 
+},
+{
+ "pointcolour": "#C49A00",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "controls.between.experiments",
+"pathcolour": "#C49A00",
+"pathsize":        4,
+"pathlinetype":        1,
+"pathalpha":      0.7 
+},
+{
+ "pointcolour": "#53B400",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "controls.between.sites",
+"pathcolour": "#53B400",
+"pathsize":        4,
+"pathlinetype":        1,
+"pathalpha":      0.7 
+},
+{
+ "pointcolour": "#00C094",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "dim.C.between.sites",
+"pathcolour": "#00C094",
+"pathsize":        4,
+"pathlinetype":        1,
+"pathalpha":      0.7 
+},
+{
+ "pointcolour": "#00B6EB",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "dim.CN.combine.sites",
+"pathcolour": "#00B6EB",
+"pathsize":        4,
+"pathlinetype":        1,
+"pathalpha":      0.7 
+},
+{
+ "pointcolour": "#A58AFF",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "dim.compare.sites",
+"pathcolour": "#A58AFF",
+"pathsize":        4,
+"pathlinetype":        1,
+"pathalpha":      0.7 
+},
+{
+ "pointcolour": "#FB61D7",
+"pointshape":       21,
+"pointsize":      1.5,
+"pointstroke":      0.5,
+"label": "dim.compare.treatments",
+"pathcolour": "#FB61D7",
+"pathsize":        4,
+"pathlinetype":        1,
+"pathalpha":      0.7 
+} 
+] 
+} 
+},
+"strips": {
+ "right": [
+ "",
+"" 
+],
+"top": [
+ "all",
+"other" 
+],
+"n": {
+ "top":        1,
+"right":        1 
+} 
+},
+"layout": {
+ "PANEL": [ "1", "2" ],
+"ROW": [ 1, 1 ],
+"COL": [ 1, 2 ],
+"compare_name": [ "all", "other" ],
+"SCALE_X": [ 1, 1 ],
+"SCALE_Y": [ 1, 1 ],
+"AXIS_Y": [ true, false ],
+"AXIS_X": [ true, true ],
+"coord_fixed": [ false, false ],
+"width_proportion": [      0.5,      0.5 ],
+"height_proportion": [        1,        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+      -12,
+      -9,
+      -6,
+      -3,
+       0 
+],
+[
+      -12,
+      -9,
+      -6,
+      -3,
+       0 
+] 
+],
+"y": [
+ [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+],
+[
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+      -12,
+   -10.5,
+      -9,
+    -7.5,
+      -6,
+    -4.5,
+      -3,
+    -1.5,
+       0 
+],
+[
+      -12,
+   -10.5,
+      -9,
+    -7.5,
+      -6,
+    -4.5,
+      -3,
+    -1.5,
+       0 
+] 
+],
+"y": [
+ [
+        0,
+   0.125,
+    0.25,
+   0.375,
+     0.5,
+   0.625,
+    0.75,
+   0.875,
+       1 
+],
+[
+        0,
+   0.125,
+    0.25,
+   0.375,
+     0.5,
+   0.625,
+    0.75,
+   0.875,
+       1 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+      -12,
+      -9,
+      -6,
+      -3,
+       0 
+],
+"xlab": [
+ "-12",
+"-9",
+"-6",
+"-3",
+"0" 
+],
+"xrange": [ -12.19305, 0.5751779 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+],
+"ylab": [
+ "0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"yrange": [ -0.09401095, 1.086795 ],
+"yline": false,
+"yticks": true 
+},
+"axis2": {
+ "x": [
+      -12,
+      -9,
+      -6,
+      -3,
+       0 
+],
+"xlab": [
+ "-12",
+"-9",
+"-6",
+"-3",
+"0" 
+],
+"xrange": [ -12.19305, 0.5751779 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+],
+"ylab": [
+ "0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"yrange": [ -0.09401095, 1.086795 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "log10.p",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "estimate",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "-12",
+"-9",
+"-6",
+"-3",
+"0" 
+],
+"ylabs": [
+ "0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"title": "NEW: legend with color, no auto showSelected",
+"title_size": "14.4pt",
+"options": {
+ "width":      400,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom16_hline_newFeature",
+"geom17_vline_newFeature",
+"geom18_point_newFeature",
+"geom19_segment_newFeature",
+"geom20_segment_newFeature" 
 ] 
 } 
 },
