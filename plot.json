@@ -1643,6 +1643,7 @@
 "geoms": [ "point", "path", "path" ],
 "title": "comparison",
 "class": "comparison",
+"selector": "comparison",
 "is_discrete": true,
 "legend_type": "colour",
 "text_size": "9.6pt",
